@@ -20,5 +20,13 @@ package com.luismorales17106494.retossemanalesmouredev
  *
  */
 fun main(){
-
+    for (x in 1..100) {
+        if (x % 3 == 0) {
+            println("fizz")
+        } else if (x % 5 == 0) {
+            println("buzz")
+        } else {
+            println(x)
+        }
+    }
 }

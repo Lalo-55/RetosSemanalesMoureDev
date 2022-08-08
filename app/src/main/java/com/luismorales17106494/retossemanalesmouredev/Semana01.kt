@@ -22,4 +22,23 @@ package com.luismorales17106494.retossemanalesmouredev
 
 fun main() {
 
+    anagrama("Raza".lowercase(), "Zara".lowercase())
+
+}
+private fun anagrama(palabra1: String, palabra2: String){
+    val arrayPalabra1 = arrayListOf<Char>()
+    val arrayPalabra2 = arrayListOf<Char>()
+
+    palabra1.forEach {
+        arrayPalabra1.add(it)
+    }
+    palabra2.forEach {
+        arrayPalabra2.add(it)
+    }
+
+    if (arrayPalabra1.sorted() == arrayPalabra2.sorted())
+        println("$palabra1 y $palabra2 son un anagrama")
+    else
+        println("no son un anagrama")
+
 }
